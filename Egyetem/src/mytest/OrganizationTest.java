@@ -3,7 +3,6 @@ package mytest;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import myenum.*;
 import myuni.*;
 
 public class OrganizationTest {
@@ -12,8 +11,8 @@ public class OrganizationTest {
 		
 		OrganizationalUnit[] units = new OrganizationalUnit[3];
 		units[0] = new Library(30, 100000);
-		units[1] = new Faculty(FacultyName.GEIK, 150, 1800);
-		units[2] = new Faculty(FacultyName.MFK);
+		units[1] = new Faculty(Faculty.FacultyName.GEIK, 150, 1800);
+		units[2] = new Faculty(Faculty.FacultyName.MFK);
 		
 		Arrays.sort(units, Comparator.comparing(OrganizationalUnit::getNumberOfEmployees));
 		
