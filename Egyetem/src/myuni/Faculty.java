@@ -1,6 +1,5 @@
 package myuni;
 
-import myenum.FacultyName;
 
 public class Faculty extends OrganizationalUnit {
 
@@ -55,6 +54,12 @@ public class Faculty extends OrganizationalUnit {
 	@Override
 	public double workPerEmployee() {
 		return numberOfStudents / getNumberOfEmployees();
+	}
+	
+	public enum FacultyName {
+
+		MAK, MFK, GEIK, GTK, AJK
+		
 	}
 	
 }
